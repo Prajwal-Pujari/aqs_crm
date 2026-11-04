@@ -1,0 +1,84 @@
+# === Java / Maven ===
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+hs_err_pid*
+replay_pid*
+
+# === Maven ===
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# === Spring Boot ===
+*.pid
+
+# === IDE ===
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# VS Code
+.vscode/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# === Node / Frontend ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp
+.pnp.js
+dist/
+build/
+.next/
+.nuxt/
+
+# === Environment ===
+.env
+.env.*
+!.env.example
+
+# === Scratch & Temporary Scripts ===
+scratch/
+test_*.ps1
+*.ps1
+*.sh
+
+# === OS ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# === Docker ===
+docker-compose.override.yml
+
+# === Misc ===
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+*.orig

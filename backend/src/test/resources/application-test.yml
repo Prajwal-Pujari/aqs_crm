@@ -1,0 +1,35 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: false
+  flyway:
+    enabled: true
+  mail:
+    host: localhost
+    port: 25
+    username: test@test.com
+    password: test
+    properties:
+      mail:
+        smtp:
+          auth: false
+          starttls:
+            enable: false
+
+app:
+  jwt:
+    secret: test-jwt-secret-key-must-be-at-least-256-bits-long-for-testing
+    expiration-ms: 3600000
+  minio:
+    endpoint: http://localhost:9000
+    access-key: minioadmin
+    secret-key: minioadmin
+    bucket: aqs-po-documents
+  mail:
+    from: noreply@aqs.com
+  scheduler:
+    reminders-cron: "0 0 9 * * ?"
+

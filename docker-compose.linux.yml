@@ -1,0 +1,85 @@
+services:
+  # ─── FRONTEND (React SPA + Nginx Reverse Proxy on Port 8099) ───────────────────
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: aqs-crm-frontend
+    ports:
+      - "8099:80"
+    depends_on:
+      - app
+    restart: unless-stopped
+
+  # ─── BACKEND (Spring Boot 3.4 / Java 21) ──────────────────────────────────────
+  app:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: aqs-crm-app
+    env_file:
+      - .env
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/${POSTGRES_DB:-aqs_crm}
+      - SPRING_DATASOURCE_USERNAME=${POSTGRES_USER:-aqs_user}
+      - SPRING_DATASOURCE_PASSWORD=${POSTGRES_PASSWORD:-changeme}
+      - SPRING_REDIS_HOST=redis
+      - SPRING_REDIS_PORT=6379
+      - MINIO_ENDPOINT=http://minio:9000
+      - MINIO_ACCESS_KEY=${MINIO_ROOT_USER:-minioadmin}
+      - MINIO_SECRET_KEY=${MINIO_ROOT_PASSWORD:-minioadmin}
+      - APP_BASE_URL=http://localhost:8099
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      minio:
+        condition: service_started
+    volumes:
+      - m2cache:/root/.m2
+    restart: unless-stopped
+
+  # ─── DATABASE (PostgreSQL 16) ────────────────────────────────────────────────
+  postgres:
+    image: postgres:16-alpine
+    container_name: aqs-crm-postgres
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-aqs_crm}
+      POSTGRES_USER: ${POSTGRES_USER:-aqs_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-aqs_user} -d ${POSTGRES_DB:-aqs_crm}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # ─── CACHE & QUEUE (Redis 7) ──────────────────────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    container_name: aqs-crm-redis
+    volumes:
+      - redisdata:/data
+    restart: unless-stopped
+
+  # ─── OBJECT STORAGE (MinIO S3 for PO PDFs & Documents) ─────────────────────────
+  minio:
+    image: minio/minio:latest
+    container_name: aqs-crm-minio
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:-minioadmin}
+    volumes:
+      - miniodata:/data
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  miniodata:
+  redisdata:
+  m2cache:
+

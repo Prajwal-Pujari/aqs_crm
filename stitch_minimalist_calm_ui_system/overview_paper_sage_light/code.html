@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&amp;family=Manrope:wght@400..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary": "#ffffff", "on-secondary-container": "#4b667b", "surface-bright": "#fff8f3", "on-tertiary": "#ffffff", "surface-container-highest": "#e8e1db", "primary": "#446254", "on-background": "#1e1b17", "primary-container": "#5c7b6c", "on-tertiary-fixed": "#2c1700", "error": "#ba1a1a", "tertiary-fixed": "#ffdcbc", "on-tertiary-fixed-variant": "#683d01", "error-container": "#ffdad6", "surface-dim": "#e0d9d3", "surface-variant": "#e8e1db", "inverse-surface": "#33302c", "surface-container-high": "#eee7e1", "on-secondary-fixed-variant": "#2f4a5e", "tertiary-fixed-dim": "#faba76", "on-error": "#ffffff", "surface-tint": "#466556", "surface-container": "#f4ede6", "on-error-container": "#93000a", "on-secondary-fixed": "#001e30", "secondary-fixed": "#cae6ff", "secondary-fixed-dim": "#aecae2", "inverse-primary": "#accebc", "background": "#fff8f3", "secondary": "#476176", "outline": "#727974", "surface": "#fff8f3", "surface-container-lowest": "#ffffff", "secondary-container": "#c7e3fc", "primary-fixed": "#c8ead8", "inverse-on-surface": "#f7efe9", "tertiary-container": "#9d692d", "on-surface": "#1e1b17", "on-primary-container": "#f5fff7", "on-tertiary-container": "#fffbff", "tertiary": "#815116", "on-primary-fixed-variant": "#2f4d3f", "on-secondary": "#ffffff", "outline-variant": "#c1c8c2", "on-surface-variant": "#424844", "surface-container-low": "#faf2ec", "on-primary-fixed": "#012115", "primary-fixed-dim": "#accebc" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "3.5rem", "space-lg": "2rem", "margin": "3rem", "space-xs": "0.375rem", "space-sm": "0.75rem", "space-md": "1.25rem", "gutter-mobile": "1rem", "margin-mobile": "1.25rem", "gutter": "1.5rem" }, "fontFamily": { "headline-lg": [ "DM Sans" ], "label-md": [ "Manrope" ], "label-lg": [ "Manrope" ], "headline-sm": [ "DM Sans" ], "headline-md": [ "DM Sans" ], "headline-xl": [ "DM Sans" ], "body-md": [ "Manrope" ], "body-sm": [ "Manrope" ], "headline-xl-mobile": [ "DM Sans" ], "body-lg": [ "Manrope" ], "label-sm": [ "Manrope" ] }, "fontSize": { "headline-lg": [ "28px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "500" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "label-lg": [ "14px", { "lineHeight": "20px", "fontWeight": "500" } ], "headline-sm": [ "18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "headline-md": [ "22px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-xl": [ "40px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "500" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-xl-mobile": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "500" } ], "body-lg": [ "17px", { "lineHeight": "28px", "fontWeight": "400" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container z-50 flex flex-col justify-between p-space-md border-r border-outline-variant/30"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs"><img alt="Sage Leaf Minimal Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XjB0uXKFN7ji4QRCoUaXf0Y--yw7q8Iux7xmqgF7Qd5NrFrCHRifUKAjdWjyQhLuzYS0ChvcCaHRKzhHUpjyNZWoTZhvH84VPxZ7ZqKkKm2oR1g-0aGnLuzHDy4HjuD7u5P5TftS4hnNMa32cMJ3ScfuxnQjMqraLMwAmLaAcaRnsZAb9nA4bP0Ww5Xz8IDv-CpCCOx2TMNjGfKjeqj-FxhhYl72XRmrEA_P_j0yg"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Oasis</span><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase mt-0.5">Workspaces</span></div></div><div class="flex items-center justify-between px-space-sm py-2 rounded-xl bg-surface-container-high/60"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-label-md text-label-md text-on-surface">Studio Sanctuary</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div><nav class="flex flex-col gap-1.5" data-active-classes="bg-primary text-on-primary font-medium shadow-none"><a aria-current="page" class="flex items-center gap-3 px-space-sm py-2.5 rounded-[14px] transition-colors bg-primary text-on-primary font-medium shadow-none" data-path="overview" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Overview</span></a><a class="flex items-center gap-3 px-space-sm py-2.5 rounded-[14px] text-on-surface-variant font-label-lg text-label-lg transition-colors hover:bg-surface-container-high hover:text-on-surface" data-path="documents" href="#"><span class="material-symbols-outlined text-[20px]">article</span><span>Documents</span></a><a class="flex items-center gap-3 px-space-sm py-2.5 rounded-[14px] text-on-surface-variant font-label-lg text-label-lg transition-colors hover:bg-surface-container-high hover:text-on-surface" data-path="projects" href="#"><span class="material-symbols-outlined text-[20px]">filter_vintage</span><span>Projects</span></a><a class="flex items-center gap-3 px-space-sm py-2.5 rounded-[14px] text-on-surface-variant font-label-lg text-label-lg transition-colors hover:bg-surface-container-high hover:text-on-surface" data-path="team" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span>Collaborators</span></a><a class="flex items-center gap-3 px-space-sm py-2.5 rounded-[14px] text-on-surface-variant font-label-lg text-label-lg transition-colors hover:bg-surface-container-high hover:text-on-surface" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span>Settings</span></a></nav></div><div class="flex flex-col gap-space-sm pt-space-md border-t border-outline-variant/30"><div class="flex items-center justify-between px-space-xs"><div class="flex items-center gap-3"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-cQLVvZ1sY75jPVREkCW5FkJctbWi9xew1q61VbPtXMc5ipAciUb_tBLlLU66yGqSA3iCmO3E8NAm8P1a6gs8IroAjC5tDZ4E_lOVcu7cT3pwjqXGPm4saEGToU5IJ1Uid6gT64WP5aolC0SOYCR-UUib6mc-4PrZIURtXKZvrkOkzs-SuLtvpbSj5Ksdh1Ckq-TAkeHpX5PtEa_k9KPOQdsLC5CTCUsYf_Ha1A"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary border-2 border-surface-container"></span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-medium leading-none">Eleanor Vance</span><span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Focusing</span></div></div><button class="text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">more_vert</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl z-40 border-b border-outline-variant/30"><div class="h-16 w-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-sm text-on-surface-variant font-label-md text-label-md"><span class="hover:text-on-surface transition-colors cursor-pointer">Workspace</span><span class="text-outline-variant">/</span><span class="text-on-surface font-medium">Quiet Canvas</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container/70 border border-outline-variant/30 text-on-surface-variant w-64"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">search</span><span class="font-body-sm text-body-sm text-on-surface-variant/70">Find thoughts or notes...</span></div><div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Uninterrupted</span></div><button class="text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications_none</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-cQLVvZ1sY75jPVREkCW5FkJctbWi9xew1q61VbPtXMc5ipAciUb_tBLlLU66yGqSA3iCmO3E8NAm8P1a6gs8IroAjC5tDZ4E_lOVcu7cT3pwjqXGPm4saEGToU5IJ1Uid6gT64WP5aolC0SOYCR-UUib6mc-4PrZIURtXKZvrkOkzs-SuLtvpbSj5Ksdh1Ckq-TAkeHpX5PtEa_k9KPOQdsLC5CTCUsYf_Ha1A"/></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="max-w-[1440px] w-full mx-auto px-space-lg py-space-lg flex flex-col gap-space-lg">
+<!-- Header Section -->
+<header class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Quiet Sanctuary</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Wednesday, 23 October</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Good morning, Elena.
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Your workspace is calm and completely up to date.
+        </p>
+</div>
+<!-- Single Primary Action -->
+<div class="flex items-center gap-3">
+<button class="group flex items-center gap-2 px-5 py-2.5 rounded-[10px] bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary-container transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:rotate-90 duration-300">add</span>
+<span>New Agreement</span>
+</button>
+</div>
+</header>
+<!-- Four Serene Metric Cards -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-[14px] flex flex-col justify-between shadow-[0_4px_20px_-2px_rgba(46,43,39,0.03)] hover:shadow-[0_8px_24px_-4px_rgba(46,43,39,0.05)] transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Active Accounts</span>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm">
+            +4 this month
+          </span>
+</div>
+<div class="mt-4 flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl text-on-surface tracking-tight">142</span>
+<!-- Subtle Sparkline -->
+<svg class="w-20 h-7 text-primary/60" fill="none" viewbox="0 0 80 28">
+<path d="M2 20 Q 20 22, 35 14 T 60 12 T 78 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"></path>
+<path d="M2 20 Q 20 22, 35 14 T 60 12 T 78 4 V 26 H 2 Z" fill="currentColor" fill-opacity="0.08"></path>
+</svg>
+</div>
+<div class="mt-3 pt-2 flex items-center justify-between text-on-surface-variant">
+<span class="font-body-sm text-body-sm">Paced steady</span>
+<span class="font-label-sm text-label-sm text-primary">99.1% healthy</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-[14px] flex flex-col justify-between shadow-[0_4px_20px_-2px_rgba(46,43,39,0.03)] hover:shadow-[0_8px_24px_-4px_rgba(46,43,39,0.05)] transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Retention Rate</span>
+<span class="material-symbols-outlined text-[18px] text-primary">spa</span>
+</div>
+<div class="mt-4 flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl text-on-surface tracking-tight">98.4%</span>
+<span class="font-label-md text-label-md text-primary font-medium">+0.6%</span>
+</div>
+<div class="mt-3 pt-2 flex items-center gap-2">
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 98.4%"></div>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-[14px] flex flex-col justify-between shadow-[0_4px_20px_-2px_rgba(46,43,39,0.03)] hover:shadow-[0_8px_24px_-4px_rgba(46,43,39,0.05)] transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Monthly Recurring</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Oct '24</span>
+</div>
+<div class="mt-4 flex items-baseline justify-between">
+<span class="font-headline-xl text-headline-xl text-on-surface tracking-tight">$68,400</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Target: $70k</span>
+</div>
+<div class="mt-3 pt-2 flex items-center justify-between text-on-surface-variant">
+<span class="font-body-sm text-body-sm">Net +$3,200</span>
+<span class="font-label-sm text-label-sm text-primary">On trajectory</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-[14px] flex flex-col justify-between shadow-[0_4px_20px_-2px_rgba(46,43,39,0.03)] hover:shadow-[0_8px_24px_-4px_rgba(46,43,39,0.05)] transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Pending Review</span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<div class="mt-4 flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface tracking-tight">3</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">accounts</span>
+</div>
+<div class="mt-3 pt-2 flex items-center justify-between text-on-surface-variant">
+<span class="font-body-sm text-body-sm">Avg. wait 1.2d</span>
+<a class="font-label-sm text-label-sm text-secondary hover:text-on-surface transition-colors" href="#">Review now →</a>
+</div>
+</div>
+</section>
+<!-- Main Content Area: Split 8 / 4 -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Recent Accounts & Agreements (8 cols) -->
+<section class="lg:col-span-8 flex flex-col gap-space-sm bg-surface-container-lowest rounded-[14px] p-space-lg shadow-[0_4px_20px_-2px_rgba(46,43,39,0.03)]">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-3 gap-2">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Recent Accounts &amp; Agreements</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Organized by recent engagement and lifecycle status</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-[10px] bg-surface-container-high/60 text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">
+              Filter: All
+            </button>
+<button class="p-1.5 rounded-[10px] text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Table Container -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider bg-surface-container-low/50">
+<th class="py-3 px-4 rounded-l-lg font-medium">Client Name</th>
+<th class="py-3 px-4 font-medium">Service Plan</th>
+<th class="py-3 px-4 font-medium">Value</th>
+<th class="py-3 px-4 font-medium">Renewal Date</th>
+<th class="py-3 px-4 rounded-r-lg font-medium text-right">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/40">
+<!-- Row 1: Haven Architectural Studio -->
+<tr class="hover:bg-surface-container-low transition-colors group h-16">
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-medium text-xs">
+                      HA
+                    </div>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface font-medium group-hover:text-primary transition-colors">Haven Architectural Studio</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Architecture &amp; Built Space</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">Sanctuary Retainer</td>
+<td class="py-3 px-4 font-label-lg text-label-lg text-on-surface">$12,400<span class="text-on-surface-variant font-body-sm">/yr</span></td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">14 Nov 2025</td>
+<td class="py-3 px-4 text-right">
+<span class="inline-flex items-center px-3 py-1 rounded-full font-label-md text-label-md bg-primary-fixed text-primary font-medium">
+                    Active
+                  </span>
+</td>
+</tr>
+<!-- Row 2: Kanso Publishing -->
+<tr class="hover:bg-surface-container-low transition-colors group h-16">
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary font-medium text-xs">
+                      KP
+                    </div>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface font-medium group-hover:text-primary transition-colors">Kanso Publishing</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Editorial &amp; Print Works</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">Quiet Studio Full</td>
+<td class="py-3 px-4 font-label-lg text-label-lg text-on-surface">$8,900<span class="text-on-surface-variant font-body-sm">/yr</span></td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">28 Oct 2024</td>
+<td class="py-3 px-4 text-right">
+<span class="inline-flex items-center px-3 py-1 rounded-full font-label-md text-label-md bg-tertiary-fixed text-tertiary font-medium">
+                    Renewal Due
+                  </span>
+</td>
+</tr>
+<!-- Row 3: Solis Botanical Gardens -->
+<tr class="hover:bg-surface-container-low transition-colors group h-16">
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary font-medium text-xs">
+                      SB
+                    </div>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface font-medium group-hover:text-primary transition-colors">Solis Botanical Gardens</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Living Horticulture</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">Campus Infrastructure</td>
+<td class="py-3 px-4 font-label-lg text-label-lg text-on-surface">$16,200<span class="text-on-surface-variant font-body-sm">/yr</span></td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">05 Dec 2024</td>
+<td class="py-3 px-4 text-right">
+<span class="inline-flex items-center px-3 py-1 rounded-full font-label-md text-label-md bg-secondary-container text-on-secondary-container font-medium">
+                    In Talks / Installation
+                  </span>
+</td>
+</tr>
+<!-- Row 4: Linden & Co Interiors -->
+<tr class="hover:bg-surface-container-low transition-colors group h-16">
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-medium text-xs">
+                      LC
+                    </div>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface font-medium group-hover:text-primary transition-colors">Linden &amp; Co Interiors</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Spatial Curation</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">Sanctuary Basic</td>
+<td class="py-3 px-4 font-label-lg text-label-lg text-on-surface">$6,400<span class="text-on-surface-variant font-body-sm">/yr</span></td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">19 Mar 2025</td>
+<td class="py-3 px-4 text-right">
+<span class="inline-flex items-center px-3 py-1 rounded-full font-label-md text-label-md bg-primary-fixed text-primary font-medium">
+                    Active
+                  </span>
+</td>
+</tr>
+<!-- Row 5: Mirador Living -->
+<tr class="hover:bg-surface-container-low transition-colors group h-16">
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-error-container flex items-center justify-center text-error font-medium text-xs">
+                      ML
+                    </div>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface font-medium group-hover:text-primary transition-colors">Mirador Living</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Ceramic &amp; Object Gallery</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">Modular Retainer</td>
+<td class="py-3 px-4 font-label-lg text-label-lg text-on-surface">$11,500<span class="text-on-surface-variant font-body-sm">/yr</span></td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">12 Oct 2024</td>
+<td class="py-3 px-4 text-right">
+<span class="inline-flex items-center px-3 py-1 rounded-full font-label-md text-label-md bg-error-container text-error font-medium">
+                    Overdue
+                  </span>
+</td>
+</tr>
+<!-- Row 6: Atelier Nord -->
+<tr class="hover:bg-surface-container-low transition-colors group h-16">
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant font-medium text-xs">
+                      AN
+                    </div>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface font-medium group-hover:text-primary transition-colors">Atelier Nord</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Nordic Joinery &amp; Craft</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">Single Suite</td>
+<td class="py-3 px-4 font-label-lg text-label-lg text-on-surface">$4,800<span class="text-on-surface-variant font-body-sm">/yr</span></td>
+<td class="py-3 px-4 font-body-sm text-body-sm text-on-surface-variant">01 Aug 2024</td>
+<td class="py-3 px-4 text-right">
+<span class="inline-flex items-center px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant font-medium">
+                    Lapsed
+                  </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pt-4 flex items-center justify-between text-on-surface-variant">
+<span class="font-body-sm text-body-sm">Showing 6 of 142 total workspaces</span>
+<button class="font-label-md text-label-md text-primary hover:text-on-surface transition-colors flex items-center gap-1" type="button">
+<span>View entire directory</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Right Column: Visualizations & Reminders (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-gutter">
+<!-- Quarterly Trajectory Chart Card -->
+<section class="bg-surface-container-lowest rounded-[14px] p-space-lg shadow-[0_4px_20px_-2px_rgba(46,43,39,0.03)] flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Quarterly Trajectory</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Organic pacing vs. tranquil projection</p>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant">Q4 '24</span>
+</div>
+<!-- Muted Multi-layer Bar / Timeline Chart -->
+<div class="pt-2 flex flex-col gap-3">
+<div class="flex items-end justify-between h-36 px-2 pb-2 border-b border-surface-container-high">
+<!-- Q1 -->
+<div class="flex flex-col items-center gap-2 w-12">
+<div class="w-full flex flex-col justify-end items-center gap-1 h-28">
+<div class="w-6 rounded-t bg-secondary-fixed-dim" style="height: 48%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Q1</span>
+</div>
+<!-- Q2 -->
+<div class="flex flex-col items-center gap-2 w-12">
+<div class="w-full flex flex-col justify-end items-center gap-1 h-28">
+<div class="w-6 rounded-t bg-tertiary-fixed-dim" style="height: 64%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Q2</span>
+</div>
+<!-- Q3 -->
+<div class="flex flex-col items-center gap-2 w-12">
+<div class="w-full flex flex-col justify-end items-center gap-1 h-28">
+<div class="w-6 rounded-t bg-surface-container-highest" style="height: 78%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Q3</span>
+</div>
+<!-- Q4 Current -->
+<div class="flex flex-col items-center gap-2 w-12">
+<div class="w-full flex flex-col justify-end items-center gap-1 h-28">
+<div class="w-6 rounded-t bg-primary-container" style="height: 92%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Q4</span>
+</div>
+</div>
+<!-- Legend with serene tints -->
+<div class="grid grid-cols-2 gap-2 pt-1 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span>Active Core</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span>Renewals</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed-dim"></span>
+<span>New Talks</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-highest"></span>
+<span>Baseline</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Gentle Reminders Card -->
+<section class="bg-surface-container-lowest rounded-[14px] p-space-lg shadow-[0_4px_20px_-2px_rgba(46,43,39,0.03)] flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Gentle Reminders</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 remaining</span>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Reminder 1 -->
+<div class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-3">
+<div class="mt-0.5 flex-shrink-0 w-4 h-4 rounded-full border border-tertiary/40 flex items-center justify-center">
+<div class="w-1.5 h-1.5 rounded-full bg-tertiary"></div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-medium">Kanso Agreement Dispatch</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Quietly confirm the updated term proposal sent yesterday.</span>
+<span class="font-label-sm text-label-sm text-tertiary mt-2">Due today, 4:00 PM</span>
+</div>
+</div>
+<!-- Reminder 2 -->
+<div class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-3">
+<div class="mt-0.5 flex-shrink-0 w-4 h-4 rounded-full border border-secondary/40 flex items-center justify-center">
+<div class="w-1.5 h-1.5 rounded-full bg-secondary"></div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-medium">Solis Botanical Setup</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Review botanical site blueprint for quiet lounge placement.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2">Tomorrow morning</span>
+</div>
+</div>
+<!-- Reminder 3 -->
+<div class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-3">
+<div class="mt-0.5 flex-shrink-0 w-4 h-4 rounded-full border border-primary/40 flex items-center justify-center">
+<div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-medium">Haven Studio Check-in</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Seasonal alignment note; no immediate response needed.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2">Friday</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Editorial Workspace Note (Tactile Paper Strip) -->
+<footer class="mt-2 p-space-md rounded-[14px] bg-surface-container-low/70 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-primary">auto_stories</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          “Simplicity is about subtracting the obvious and adding the meaningful.” — John Maeda
+        </p>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant">
+<a class="font-label-sm text-label-sm hover:text-on-surface transition-colors" href="#">Daily Summary</a>
+<span class="text-outline-variant">•</span>
+<a class="font-label-sm text-label-sm hover:text-on-surface transition-colors" href="#">Archived Agreements</a>
+<span class="text-outline-variant">•</span>
+<a class="font-label-sm text-label-sm hover:text-on-surface transition-colors" href="#">Export Ledger</a>
+</div>
+</footer>
+</div>
+</div>
+<script>
+  // Micro-interaction: Subtle hover acknowledgment for table rows
+  document.querySelectorAll('tbody tr').forEach(row => {
+    row.addEventListener('click', () => {
+      row.classList.add('bg-surface-container-high/40');
+      setTimeout(() => {
+        row.classList.remove('bg-surface-container-high/40');
+      }, 350);
+    });
+  });
+</script></main></div></body></html>
